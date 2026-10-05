@@ -1,0 +1,107 @@
+{
+    "1241261577479212": {
+        "ad_archive_id": "1241261577479212",
+        "page_id": "600763893127808",
+        "snapshot": {
+            "branded_content": null,
+            "page_id": "600763893127808",
+            "page_is_deleted": false,
+            "page_profile_uri": "https://www.facebook.com/61576224231524/",
+            "root_reshared_post": null,
+            "byline": null,
+            "disclaimer_label": null,
+            "page_name": "Negocia",
+            "page_profile_picture_url": "https://scontent.fdiq2-1.fna.fbcdn.net/v/t39.35426-6/514342092_591972583947514_4220577318922766966_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=WTaAvpNjbGYQ7kNvwGFjBzY&_nc_oc=AdlysDO1ZScQVI9jT2v67Apa9_HUbhhvPvInGQ9x_1_Qin-qpn6CHB0ydAC2EQ7pA3jbnkZT4DCKKZP6bhV4KyHm&_nc_zt=14&_nc_ht=scontent.fdiq2-1.fna&_nc_gid=Df3u1nBrnZlavbd2u2ocRQ&oh=00_AfOwaer0N9JFi6eUxIG6vNJDXyJANxw3dw0SI8_zJrHniA&oe=686B3726",
+            "body": {
+                "text": "Feijoada Solidária contra o Câncer com show do SampaCrew e várias bandas convidadas. Imperdível! Evento para toda família! Ingressos Whatsapp (11) 97567-4785"
+            },
+            "is_reshared": false,
+            "brazil_tax_id": null,
+            "caption": "gapc.org.br",
+            "cards": [],
+            "cta_text": "Buy tickets",
+            "cta_type": "BUY_TICKETS",
+            "country_iso_code": null,
+            "current_page_name": "Negocia",
+            "display_format": "EVENT",
+            "event": {
+                "event_end_timestamp": 1751835600,
+                "event_location": "Clube Náutico Mogiano",
+                "event_start_timestamp": 1751806800,
+                "event_timezone": "America/Sao_Paulo"
+            },
+            "images": [
+                {
+                    "original_image_url": "https://scontent.fdiq2-1.fna.fbcdn.net/v/t39.35426-6/515506351_741204831761368_9222733847553514952_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=iwgYRMv7bpUQ7kNvwEgEgV6&_nc_oc=AdmuCO75v1CgPFhaFhVnr0K_jhV0PS1VPHhrTAXfwl2JWiNox-uHtiwqPkGQ_7QEopmaZgdhBf8tjrAS_jyyLSyZ&_nc_zt=14&_nc_ht=scontent.fdiq2-1.fna&_nc_gid=Df3u1nBrnZlavbd2u2ocRQ&oh=00_AfOa0oYlpero_YsBl3vo5mo7WQEmzRVGgENzgxAISoH7rg&oe=686B32E4",
+                    "resized_image_url": "https://scontent.fdiq2-1.fna.fbcdn.net/v/t39.35426-6/514972888_591594930666285_278525514820454319_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Ji04N3AKsEgQ7kNvwGuwdvi&_nc_oc=Admk7uSFKtRuG0h87Wp3yLGCEMqPPK5k5bOZwu2cWo6XZHzKpq3ve1AXALB8kIkwh_sQVV6hpF_MmFZTwRXqZ8QB&_nc_zt=14&_nc_ht=scontent.fdiq2-1.fna&_nc_gid=Df3u1nBrnZlavbd2u2ocRQ&oh=00_AfMqxu80wv1Nii1MXMAikvVJCJ4YVLFsz1rneRSUgzyryg&oe=686B43B0",
+                    "watermarked_resized_image_url": "",
+                    "image_crops": []
+                }
+            ],
+            "link_description": "Clube Náutico Mogiano · Mogi das Cruzes, SP, Brazil",
+            "link_url": "http://www.gapc.org.br/",
+            "page_categories": [
+                "Business & Economy Website"
+            ],
+            "page_entity_type": "PERSON_PROFILE",
+            "page_is_profile_page": false,
+            "page_like_count": 46,
+            "title": "Feijoada Solidária com Pagode do GAPC Mogi das Cruzes",
+            "videos": [],
+            "additional_info": null,
+            "ec_certificates": [],
+            "extra_images": [],
+            "extra_links": [],
+            "extra_texts": [],
+            "extra_videos": []
+        },
+        "is_active": true,
+        "has_user_reported": false,
+        "report_count": null,
+        "menu_items": [],
+        "state_media_run_label": null,
+        "page_is_deleted": false,
+        "page_name": "Negocia",
+        "ad_id": null,
+        "archive_types": [],
+        "categories": [
+            "UNKNOWN"
+        ],
+        "collation_count": 1,
+        "collation_id": "654825734257535",
+        "contains_digital_created_media": false,
+        "contains_sensitive_content": false,
+        "currency": "",
+        "end_date": 1751353200,
+        "entity_type": "PERSON_PROFILE",
+        "fev_info": null,
+        "gated_type": "ELIGIBLE",
+        "hidden_safety_data": false,
+        "hide_data_status": "NONE",
+        "impressions_with_index": {
+            "impressions_text": null,
+            "impressions_index": -1
+        },
+        "is_aaa_eligible": false,
+        "is_profile_page": false,
+        "political_countries": [],
+        "publisher_platform": [
+            "FACEBOOK",
+            "INSTAGRAM"
+        ],
+        "reach_estimate": null,
+        "regional_regulation_data": {
+            "finserv": {
+                "is_deemed_finserv": false,
+                "is_limited_delivery": false
+            },
+            "tw_anti_scam": {
+                "is_limited_delivery": false
+            }
+        },
+        "spend": null,
+        "start_date": 1751266800,
+        "targeted_or_reached_countries": [],
+        "total_active_time": null
+    }
+}
