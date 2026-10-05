@@ -1,0 +1,6 @@
+# Reproducible analysis outputs can be large and are regenerated on demand.
+analysis/output/
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]

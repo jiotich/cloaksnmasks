@@ -1,0 +1,116 @@
+
+\section{Results}
+
+
+% \begin{table}[t]
+% \centering
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{@{}lcccl@{}}
+
+% {\textbf{\large Display Format}} & \multicolumn{2}{c}{\large\textbf{Total}}  & \multicolumn{2}{c}{\large\textbf{Deceptive}} \\ \midrule
+% \footnotesize\textbf{VIDEO}         & \small 223002 & \scriptsize\textbf{54.7\%}           & \small 16867 & \scriptsize\textbf{7.6\%}  \\
+% \footnotesize\textbf{IMAGE}         & \small 112877 & \scriptsize\textbf{27.7\%}           & \small 6747  & \scriptsize\textbf{6.0\%}  \\ \midrule
+% \footnotesize\textbf{DCO}           & \small 38846  & \scriptsize\textbf{9.5\%}            & \small 2338  & \scriptsize\textbf{6\%}    \\
+% \footnotesize\textbf{CAROUSEL}      & \small 27032  & \scriptsize\textbf{6.6\%}            & \small 308   & \scriptsize\textbf{1.1\%}  \\ \midrule
+% \footnotesize\textbf{MULTI\_IMAGES} & \small 3153   & \scriptsize\textbf{0.78\%}           & \small 3     & \scriptsize\textbf{0.1\%}  \\
+% \footnotesize\textbf{DPA}           & \small 2453   & \scriptsize\textbf{0.6\%}            & \small 658   & \scriptsize\textbf{26.8\%} \\ \midrule
+% \scriptsize\textbf{MULTI\_VIDEOS} &  \small 43    & \tiny\textbf{$<$0.1\%} &  \small 0     & \scriptsize\textbf{0\%}    \\
+% \scriptsize\textbf{PAGE\_LIKE}    &  \small 141    & \tiny\textbf{$<$0.1\%} &  \small 7     & \scriptsize\textbf{5\%}    \\
+% \scriptsize\textbf{TEXT}          &  \small 71     & \tiny\textbf{$<$0.1\%} &  \small 2     & \scriptsize\textbf{2.8\%}  \\
+% \scriptsize\textbf{MULTI\_MEDIAS} &  \small 39     & \tiny\textbf{$<$0.1\%} &  \small 0     & \scriptsize\textbf{0\%}    \\
+% \scriptsize\textbf{EVENT}         &  \small 14     & \tiny\textbf{$<$0.1\%} &  \small 0     & \scriptsize\textbf{0\%}    \\ \midrule
+% {\textbf{Complete Dataset}}          & {\small\textbf{407771}} & \scriptsize\textbf{-} &  \small\textbf{26930}     & \small\textbf{6.6\%}    \
+% \end{tabular}%
+% }
+% \caption{Collection data by advert display format. Deceptive here means presence of one or more of the deceitful patterns observed. Since an advert can contain multiple deceptive patterns, the overlap needs to be considered relative to the deceptive total displayed.}
+% \label{tab:totals}
+% \end{table}
+
+% \begin{table}[]
+% \centering
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{@{}clcccc@{}}
+% \toprule
+% \multicolumn{2}{c}{\textbf{Display Format}} &
+%   \textbf{\begin{tabular}[c]{@{}c@{}}Card\\ Cloaking\end{tabular}} &
+%   \textbf{\begin{tabular}[c]{@{}c@{}}Url\\ Masked\end{tabular}} &
+%   \textbf{\begin{tabular}[c]{@{}c@{}}Single \\ Redirections\end{tabular}} &
+%   \textbf{\begin{tabular}[c]{@{}c@{}}Multi\\ Redirections\end{tabular}} \\ \midrule
+% single   & \textbf{VIDEO}          & -            & 11505          & 5497           & 5664          \\
+% single   & \textbf{IMAGE}          & -            & 5947           & 911            & 2202          \\ \midrule
+% cards    & \textbf{DCO}            & 883          & 1786           & 377            & 440           \\
+% cards    & \textbf{CAROUSEL}       & 44           & 120            & 162            & 11            \\ \midrule
+% multi    & \textbf{MULTI\_IMAGES}  & -            & 0              & 3              & 0             \\
+% cards    & \textbf{DPA}            & 2            & 132            & 543            & 3             \\ \midrule
+% \multicolumn{2}{c}{\textbf{Total}} & \textbf{929} & \textbf{24213} & \textbf{11376} & \textbf{8673} \\ \bottomrule
+% \end{tabular}%
+% }
+% \caption{Placeholder Text}
+% \label{tab:deceit}
+% \end{table}
+
+\section{RQ1: How is domain distribution characterized for links embedded in Brazilian adverts circulating on Meta's Ad Library? How prevalent, and of what kind are the external cloaking strategies found?}
+% -> Statistics on general URL prevalence: meta/external, TLDs, Y/N link
+% -> Url Shorteners, Multi Redirection
+% -> Multi Redirectors: unconditional, ip-based
+
+\section{RQ2: How are Meta's Advertising features misused to enable internal, in-platform cloaking of URLs? How prevalent are these techniques in the Brazilian ecossystem?}
+% -> URL Masking
+% -> Card Cloaking
+
+
+\section{RQ3: What features further differ cloaked adverts from non-cloaked ones?}
+% -> Comparative Analysis: CTAs, texts fields, 
+
+
+% \subsection{URL Masking}
+% The act of changing a hyperlink's display through anchor-text has long been a standard practice on the Web, having legitimate uses incorporating hyperlinks in text seamlessly, avoiding the need to break the flow of sentences by adding a  semantically irrelevant and potentially long URL to a phrase. However, hiding the address that opens up when clicking a link is inherently more dangerous than clicking a transparently written-out address. As a matter of fact, researchers have been pointing out how anchor text can be maliciously used by threat actors as far as back as 2006 ~\cite{anchorPhishingOld}, with authors finding that the most common type of link in phishing emails are links where the anchor text shows one domain while the actual address links to another. Thorough the years, this pattern has consistently kept emerging on different studies ~\cite{anchorMaskRecent, anchorMaskOld} up until the present day \cite{shortPathPhishing, hyperlinkMaskingPhishEmail}, highlighting how long this feature has been misused on the Web.
+
+% In our dataset, we've managed to uncover 24213 adverts where the field equivalent to anchor text was different from the actually linked website \ref{tab:deceit}. 
+
+% There is a possibility that URL resolutions could end up redirecting to the domain displayed in the mask, with the ``True'' link actually embedded in the advert serving purposes of analytics or link shortening. This fact, however, does not remove the deceitfulness of the pattern, as the consumer is still not well-informed about . Adding to this, URL shortening services have been shown to be actively abused \cite{urlShortAbuse_Cloaking_WWW, shortPathPhishing}, taking advantage of the inherent lack of transparency related to this practice.
+
+% \begin{table*}[t]
+% \centering
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{@{}lcccl@{}}
+% \cmidrule(r){1-4}
+% \multicolumn{1}{c}{\textbf{Mask}} & \textbf{\# Targeted Domains} & \textbf{\# Ads} & \textbf{Most Frequent Targets} &  \\ \cmidrule(r){1-4}
+% google.com     & 159 & 2854 & edgs.shop  -  ko7x7pwic.cc  -  mauy.click         &  \\
+% whatsapp.com   & 33  & 852  & facebook.com  -  maga.lu  -  bianca18aninhos.vip  &  \\
+% instagram.com  & 26  & 122  & meuapppedido.com  -  netlify.app  -  whatsapp.com &  \\
+% facebook.com   & 22  & 276  & h9m2q8v.com  -  56tg.cc  -  n8kx4rq.com           &  \\
+% youtube.com    & 21  & 245  & 15ax.com  -  edgs.shop  -  ebay.com               &  \\
+% google.play    & 18  & 290  & i9f5ou39b.cc  -  7kjps3c7.com  -  crwkx54.com     &  \\
+% play.com       & 14  & 65   & t3ti9lsd.com  -  bhh89vv33.com  -  l39dx2.com     &  \\
+% huawei.com     & 14  & 510  & ramlaxgroups.com  -  r5k3m1.com  -  l5x3m9.com    &  \\
+% tiktok.com     & 13  & 247  & kwq732.com  -  v56ji32.com  -  v56ji27.com        &  \\
+% googleplay.com & 12  & 504  & edgs.shop  -  shebdsd.com  -  gimc.hk             &  \\ \cmidrule(r){1-4}
+% \end{tabular}%
+% }
+% \caption{Most frequent masks, as well as the websites most frequently hidden underneath.}
+% \label{tab:masks}
+% \end{table*}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=.95\linewidth]{AnonymousSubmission/LaTeX/figs/masking/mask_entropy.png}
+%     \caption{Differences in entropy for domain names between actually linked domain, masks and adverts without link masking. Results show a statistically significant, although small difference (+0.039 bits/character, p=$1.21**-7$) in median entropy between ``hidden'' domains and URLs from non-masked adverts.}
+%     \label{fig:mask_entropy}
+% \end{figure}
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=.95\linewidth]{AnonymousSubmission/LaTeX/figs/masking/tld_dist.png}
+%     \caption{Distribution of Top-Level Domains between masks and actual linked addresses. With 10 degrees-of-freedom, Cramér's V = 0.418, showing significantly different distribution of domains between categories (p=$1.75**-216$).}
+%     \label{fig:placeholder}
+% \end{figure}
+
+% \subsection{Resolution Cloaking}
+% The use of conditional redirection of requests has long been documented as a deception strategy used on the Web \cite{cloakingOld}, being employed to avoid moderation and legislative efforts.
+
+
+% \subsection{Dynamic Card Cloaking}
+% Our dataset shows the presence of a type of cloaking ``endemic'' to Meta's Ad Library, one that exploits dynamic advertising formats originally offered to display differently-formatted ads optimized for specific user types. As shown in \ref{tab:deceit}, this type of cloaking is rarer in comparison to the other deceptive patterns found, nonetheless because it can only be implemented in three out of the eleven advert formats provided by Meta. Despite this rarity, 
+
+% \section{Content Analysis}

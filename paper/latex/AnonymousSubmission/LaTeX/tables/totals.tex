@@ -1,0 +1,39 @@
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table*}[]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Display Format} &
+  \multicolumn{1}{l}{\textbf{Total}} &
+  \multicolumn{1}{l}{\textbf{URL Masking}} &
+  \multicolumn{1}{l}{\textbf{Card Cloaking}} &
+  \multicolumn{1}{l}{\textbf{Multi Redirection}} &
+  \multicolumn{1}{l}{\textbf{Single Redirection}} &
+  \multicolumn{1}{l}{\textbf{Total Cloaked}} \\ \midrule
+VIDEO         & 223002 (54.6\%)         & 11505 (5.2\%) & -           & 5664 (2.5\%)          & 5493 (2.5\%) & 16863  (7.6\%) \\
+IMAGE         & 112877 (27.7\%)         & 5944 (5.3\%)  & -           & 2202 (2.0\%)          & 908 (0.8\%)  & 6744  (6.0\%)  \\
+MULTI\_IMAGES & 3153 (\textless{}0.1\%) & 0             & -           & 0                     & 3 (0.1\%)    & 3  (0.1\%)     \\
+MULTI\_VIDEOS & 143 (\textless{}0.1\%)  & 0             & -           & 0                     & 0            & 0              \\
+MULTI\_MEDIAS & 39 (\textless{}0.1\%)   & 0             & -           & 0                     & 0            & 0              \\
+DCO           & 38846 (9.5\%)           & 1768 (4.6\%)  & 883 (2.3\%) & 440 (1.1\%)           & 375 (1.0\%)  & 2336  (6.0\%)  \\
+CAROUSEL      & 27032 (6.6\%)           & 120 (0.4\%)   & 44 (0.2\%)  & 11 (\textless{}0.1\%) & 162 (0.6\%)  & 308  (1.1\%)   \\
+DPA           & 2453 (\textless{}0.1\%) & 132 (5.4\%)   & 2 (0.1\%)   & 3 (0.1\%)             & 543 (22.1\%) & 658  (26.8\%)  \\
+PAGE\_LIKE    & 141 (\textless{}0.1\%)  & 0             & -           & 2 (1.4\%)             & 5 (3.5\%)    & 7  (5.0\%)     \\
+TEXT          & 71 (\textless{}0.1\%)   & 1 (1.4\%)     & -           & 0                     & 1 (1.4\%)    & 2  (2.8\%)     \\
+EVENT         & 14 (\textless{}0.1\%)   & 0             & -           & 0                     & 0            & 0              \\ \midrule
+\textbf{Dataset} &
+  \multicolumn{1}{l}{\textbf{407771}} &
+  \textbf{19470} &
+  \textbf{929} &
+  \textbf{8322} &
+  \textbf{7490} &
+  \multicolumn{1}{l}{\textbf{26921 (6.6\%)}} \\ \bottomrule
+\end{tabular}%
+}
+\caption{Total collection amounts.}
+\label{tab:totals}
+\end{table*}
