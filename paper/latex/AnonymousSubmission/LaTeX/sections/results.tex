@@ -1,0 +1,67 @@
+
+\section{Results}
+%\subsection{How are Meta's Advertising features misused to enable internal, in-platform cloaking of URLs? How prevalent are these techniques in the Brazilian ecossystem?}
+\subsection{Domain Distribution}
+The total 26279 unique domains found are observed to be distributed with severely skewed frequencies, with the most commonly used ones being dominated by Meta's own platforms, highlighting the circularity of Meta's ecosystem. For instance, ``whatsapp.com'' is used over 50 times more than the most frequent non-Meta domain ``shopee.com''.
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AnonymousSubmission/LaTeX/figs/tlds.pdf}
+    \caption{Top-Level Domain Distribution for websites linked by different ranges of total advertisers. Left bars are weighted by advertiser amount, while right bars count only unique domains on the specified range.}
+    \label{fig:tldist}
+\end{figure}
+\textbf{Domain Usage by Advertiser.}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AnonymousSubmission/LaTeX/figs/cdf.pdf}
+    \caption{Url Distribution}
+    \label{fig:urlcdf}
+\end{figure}
+
+\subsection{Internal Cloaking}
+This section describes deceptive URL patterns that can be detected entirely within Meta's advertising systems, not requiring external HTTP requests as these patterns are detected entirely in the advert's metadata JSON.
+
+\subsubsection{URL Masking}
+URL Masking happens through the use of the field "Caption", which essentially works as anchor text, allowing for hyperlinks to be shown as arbitrary strings in place of the actually embedded link. Figure \ref{fig:masking} highlights how the difference between ``caption'' and ``link\_url'' misleads the audience into believing they are accessing a website different from what's actually linked. This type of misuse of flexible hyperlinking has been reported to be associated with phishing susceptibility \cite{urlMaskClick}. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AnonymousSubmission/LaTeX/figs/masking/card_cloak.png}
+    \caption{A card-cloaked image advert. It leads the audience into believing the website domain is ``doceemminutos.com'' while the actually embedded URL is ``pay.kiwify.com.br/211hNC8''.}
+    \label{fig:masking}
+\end{figure}
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AnonymousSubmission/LaTeX/figs/masking/phish44.pdf}
+    \caption{Masks using domains from Tranco ~\cite{tranco}}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{AnonymousSubmission/LaTeX/figs/masking/ggl_cropped.pdf}
+    \caption{Masks simulating google.}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsubsection{Card Cloaking}
+Card cloaking happens when Dynamic Advertising formats are abused to hide malicious content amid harmless fillers.  
+% -> Card Cloaking
+
+
+
+\subsection{External Cloaking}
+%\subsection{How is domain distribution characterized for links embedded in Brazilian adverts circulating on Meta's Ad Library? How prevalent, and of what kind are the external cloaking strategies found?}
+% -> Statistics on general URL prevalence: meta/external, TLDs, Y/N link
+% -> Url Shorteners, Multi Redirection
+% -> Multi Redirectors: unconditional, ip-based
+
+\subsection{What features further differ cloaked adverts from non-cloaked ones?}
+% -> Comparative Analysis: CTAs, texts fields, 
+
+
+\subsection{Comparative Analysis}

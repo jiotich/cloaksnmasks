@@ -1,0 +1,38 @@
+
+\section{Methodology}
+\input{AnonymousSubmission/LaTeX/tables/totals}
+\subsection{Data Collection}
+Meta provides access to complete advertising information through its Web interface, with API access in most countries covering only ads about politics and social issues\footnote{https://www.facebook.com/ads/library/api}. To ensure data are as complete as possible, we thus focused our retrieval efforts entirely the Web platform, through a collection pipeline whose closest literature match is \cite{metaAudit}, with our key differences including complete multimedia creative extraction (images and video) and increased diversity coverage through an unfiltered search approach instead of a advertiser-constrained one. Our crawler was operated for two months, from the 20th of April to the 19th of June 2026, resulting in the collection of 407771 full advert media + metadata pairs, taking over more than 600GB storage space. 
+
+In order to provide a thorough analysis of Meta's Ad Library, our collection pipeline was implemented prioritizing the advert's data completeness and granularity over higher-scale collection of partial content. 
+For instance, although an advert's multimedia content is its most prominently user-facing component, it is also the most difficult one to work with from a data collection standpoint, with images and especially video taking more storage space and bandwidth than JSON-based GraphQL query results while also adding in complexity regarding file formats and binary storage. This factors into the reasons why most studies only partially include or entirely discard multimedia content. 
+
+A metadata-only study allowed researchers to create and analyze a dataset of over 3 million political adverts in circulation in the US \cite{adlibSecAudit}. It dedicates an entire section to unretrievable adverts, including a bug report and subsequent fix by Meta's teams, which reduced but did not completely solve the issue. The study also mentions how, at the time, access to ads was provided only through search queries or advertiser identifiers, the latter being the basis for their advertiser-centric collection. Their approach works well in the political context, where the landscape of advertisers is constrained within a defined thematic boundary, making possible information loss from not including emerging new advertisers not as relevant. This aproach, however, does not work well for our purposes, as constraining the queries to specific sets of advertisers by definition adds in bias particularly harmful to the investigation of moderation avoidance techniques, as \textit{a priori} mapping of advertisers assoaciated with cloaking would. Our approach solves both the biased and inconsistent advert retrieval issues through the use of special characters as the search term. We've empirically verified that searches for diacritics and characters like '*' return the content expected for a generic search in the following scenarios:
+\begin{itemize}
+    \item Searches for 'keyword *' return the same view as 'keyword'. Positioning of the special character does not alter this result.
+    \item Searches for '*' under a specific advertiser an identical view than the full advert display
+    \item Searches for '*' in countries with <50k adverts (the maximum reported ad amount) return >= than vowel searches return.
+    \item Searches for '*' in advertisers 
+    \item Searches for '\`', '\~', '\^' and other special characters return identical results in the previous scenarios.
+\end{itemize}
+We therefore operate under the assumption that in searches with no other parameters, the return value is equivalent to an unfiltered search. This assumption is strengthened by the diversity of advertised content in the dataset and by confirming that this technique allows for the collection of adverts that are neither displayed nor retrievable on their respective advertiser pages, highlighting the increased granularity. We consider these conditions to be sufficient for operating a novel analysis that makes the most of noted limitations and inconsistencies found in the underdocumented Ad Library Ecossystem \cite{transparencyLimitationAdLib, metaAudit, adLibBet, adlibSecAudit}.
+
+One study including media collection \cite{adLibBet} analyzed Meta's adverts as a component in the context of the illegal betting ecosystem in India, with a dataset containing 29.772 ads of which 23.620 had their media content retrieved, attributing it ``to missing or dynamically loaded elements''. In order to further the goal of thoroughness, we launched preliminary metadata-only collection steps to map advert display formats, ensuring our data ingestion component could handle all detected dynamic creatives. Table \ref{tab:totals} shows all detected formats, with 'VIDEO', 'IMAGE', 'DCO' and 'CAROUSEL' dominating over the remaining categories. Surprisingly, the reported total amount of images and video successfully downloaded in this betting study was about 79.3\%, close to the proportion of 81.1\% we find adding in the totals for 'VIDEO' and 'IMAGE' formats in the table, although images are the most frequent media type found in India while our Brazil-based dataset has video as the most popular format. In the present study, we find the dynamic advert (DCO, Carousel and DPA) proportion (16.6\%) to also be in matching range of the reported 20.6\% of ads with media unsuccessfully extracted ``due to to missing or dinamically loaded content and access instability''.
+
+
+
+\subsection{Cloaking Detection}
+\textbf{URL Masking}
+URL Masking happens through the use of the field "Caption", which essentially works as anchor text, allowing for hyperlinks to be shown as arbitrary strings in place of the actually embedded link. Figure \ref{fig:masking} highlights how the difference between ``caption'' and ``link\_url'' misleads the audience into believing they are accessing a website different from what's actually linked. This type of misuse of flexible hyperlinking has been reported as associated with phishing \cite{shortPathPhishing, urlPhishCloak} and increased user susceptibility to it \cite{urlMaskClick, hyperlinkMaskingPhishEmail}.
+
+URL Masking detection is implemented through the comparison of domain names. As captions are sometimes used as text fields, non-URL formatted strings are discarded, followed by domain name comparison. The library was used TLDextract\footnote{https://pypi.org/project/tldextract/} was used to ensure updated Public Suffix List compatibility and private domain extraction. 
+
+\textbf{Card Masking} Card masking is detected when one link\_url differs from the others, such as in an advert where 4 cards embed an actual ``amazon.com'' link while one has a link to ``othersite.xyz''.
+
+
+\textbf{URL Resolution Cloaking}
+URLs were requested from 4 differently geolocated IPs in Brazil, Portugal, Germany and the US, with requisitions repeated 5 times to capture possible variation. 
+
+
+\subsection{Limitations}
+In the context of the already established limitations inherent to the Ad Library \cite{transparencyLimitationAdLib, metaAudit, adLibBet}, the main limitation of this study comes from the fact that we cannot know the total ads in circulation during the collection timeline, .

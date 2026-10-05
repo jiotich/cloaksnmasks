@@ -1,0 +1,36 @@
+
+\section{Related Work}
+\subsection{Advertising Ecosystem Auditing}
+The rise of transparency requirements for digital advertising has led to efforts in measuring how effectively companies are in following this goal \cite{metaAudit}. Auditing becomes the object of study itself, with policies compared between platforms, regulations and public opinion \cite{politicalComplexity}. A study focusing on Facebook has shown how algorithmic advert delivery optimization can lead to discriminatory content distribution \cite{adDeliveryDiscrimination}.
+
+The abuse of otherwise legitimate distribution systems for malicious purposes has been a research topic in several studies. In \cite{adFraudRevenue}, authors investigate how identifier pooling can be used to redirect revenue to fraudulent sources. Through the analysis of four different traffic sources, a study by \cite{urlShortAbuse_Cloaking_WWW} investigates abusive advertising distribution, revealing that cloaking-aware scraping leads to the discovery of 81\% more malicious URLs than singular crawling strategies, also highlighting the relevance of URL shorteners in fraudulent advertising. 
+
+Meta's Ad Library has been extensively studied in the context of political advertising ~\cite{adpolit1, adpolit2, adpolit3, adpolit4}, with the ecosystem also being investigated externally \cite{politAuditMetaWWW, transparencyLimitationAdLib} from the library to further transparency efforts. It has also been studied in the context of Illicit Betting Ecosystems \cite{adLibBet}, Health-related topics, such as ``alternative'' medicine promotion \cite{healthMetaAd} and COVID-19 informational weaponization \cite{adLibHealth}. One security-centered study points to design and implementation flaws that harm the Library's transparency, revealing the presence of undeclared, coordinated advertising campaigns associated with inauthentic content \cite{adlibSecAudit}. 
+
+\subsection{Cloaking}
+With over 20 years both as a conceptual research topic and as a set of strategies for online deception, the term's usage has evolved with the different, emerging strategies that enable cloaking in different contexts. 
+
+\textbf{Redirection Cloaking}: . Research by \cite{redirectionFormats} provides a general understanding of redirection mechanisms used in cloaking, outlining the same practices we empirically observe.
+
+\textbf{Url Masking}: A study by \cite{adUrlRisksRelated} analyzed the security risks of ad-based URL shortening services. 
+
+\textbf{Creative Optimization}: The exploitation of dynamic content delivery systems avoid moderation has been a phenomenon reported in a wide range of platforms, being confirmed as an effect bypass for contextual ads in Youtube \cite{youtubeContextCloak}
+
+
+
+Currently, the closest a study has gotten to analyzing cloaking patterns in an online ecossystem is \cite{industrialCloaking}, which does not mention the specific platform.
+
+
+
+\subsection{Research Gap}
+Despite plentiful related analyses, research has frequently focused on context-specific definitions \cite{urlShortAbuse_Cloaking_WWW}, leading to rich, highly diverse reporting on actively employed cloaking techniques. However, such diversity has also led to similar phenomena not being considered under an unifying framewwork.
+
+With, to the best of our knowledge, no previous studies on advert-embedded URLs on Meta's advertising ecossystem, our study aims to fill in:
+\begin{enumerate}
+    \item A conceptual gap on the definition of cloaking through an analysis of its occourence on in one of the most relevant advertising ecossystems in the world.
+    \item A gap in security auditing literature where no large-scale analyses have been condutcted in relation to URL embeds for adverts in Metas's Ad Library.
+\end{enumerate}
+
+
+
+%\input{AnonymousSubmission/LaTeX/tables/taxonomy}
